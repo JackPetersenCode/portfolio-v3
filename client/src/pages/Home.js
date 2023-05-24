@@ -110,7 +110,9 @@ const BigFlex = styled.div`
       justify-content: center;
       align-items: center;
       margin: 10%;
-
+      @media screen and (max-width: 768px) {
+        margin: 5%;
+      }
 `
 const ServiceDiv = styled.div`
     width: 100%;
