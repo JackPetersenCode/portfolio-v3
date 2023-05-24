@@ -105,6 +105,9 @@ const SwitchDiv = styled.div`
       padding-bottom: 20px;
       margin-right: 5%;
     }
+    @media screen and (max-width: 432px) {
+      margin-left: 0px;
+    }
 `
 const SwitchImg = styled.img`
     max-height: 100px;
@@ -169,6 +172,7 @@ const Home = () => {
                     <div className={switchedOn ? "jackDivOnStyle" : "jackDivOffStyle"}>Jack Petersen</div>
                     <div className={switchedOn ? "redDivOnStyle" : "redDivOffStyle"}>FULL-STACK SOFTWARE DEVELOPER</div>
                   </VertFlex>
+                  
                   <SwitchDiv onClick={handleSwitch}>
                       {switchedOn ? <SwitchImg src="/on2.png" /> : <SwitchImg src="/off4.png"/>}
                   </SwitchDiv>
