@@ -54,6 +54,10 @@ function ContactForm() {
     const [message, setMessage] = useState("");
 
     function submitEmail(e) {
+        if (!email) {
+          alert("Must include your email address."); 
+          return;
+        }
         e.preventDefault();
         portfolio({
             method: "POST", 

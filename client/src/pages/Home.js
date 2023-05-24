@@ -100,6 +100,11 @@ const InnerContainer = styled.div`
 const SwitchDiv = styled.div`
     text-align: center;
     margin-left: 50px;
+    @media screen and (max-width: 768px) {
+      margin-left: 5%;
+      padding-bottom: 20px;
+      margin-right: 5%;
+    }
 `
 const SwitchImg = styled.img`
     max-height: 100px;
@@ -132,6 +137,9 @@ const VertFlex = styled.div`
 const TitleFlex = styled.div`
     display: flex;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      align-items: end;
+    }
 `
 const FooterDiv = styled.div`
     

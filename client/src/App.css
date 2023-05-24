@@ -156,11 +156,11 @@ color: rgb(180,180,180);
 
 @media screen and (max-width: 768px) {
   .jackDivOffStyle {
-    font-size: 3.5rem;
+    font-size: 4.0rem;
     line-height: 65px;
   }
   .jackDivOnStyle {
-    font-size: 3.5rem;
+    font-size: 4.0rem;
     line-height: 65px;
   }
   .redDivOffStyle {

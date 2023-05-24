@@ -34,7 +34,7 @@ function sendEmail (sender) {
         const mail_configs = {
             from: sender.email,
             to: process.env.EMAIL,
-            subject: sender.subject,
+            subject: sender.subject + ' ' + sender.email,
             text: sender.message
         }
         transporter.sendMail(mail_configs, function(error, info) {
