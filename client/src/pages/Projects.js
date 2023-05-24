@@ -66,7 +66,7 @@ const Projects = () => {
             <div className="video-container">
                 <VideoDiv>
                   <StyledVideo autoPlay loop muted id='video'>
-                      <source src='/thehoopscoop.mp4' type='video/mp4' />
+                      <source src='thehoopscoop2.mp4' type='video/mp4' />
                   </StyledVideo>
                 </VideoDiv>
                 <TextDiv>
@@ -130,7 +130,7 @@ const Projects = () => {
             <div className="video-container">
                 <VideoDiv>
                   <StyledVideo autoPlay loop muted id='video'>
-                      <source src='/kudos5.mp4' type='video/mp4' />
+                      <source src='kudos6.mp4' type='video/mp4' />
                   </StyledVideo>
                 </VideoDiv>
 
