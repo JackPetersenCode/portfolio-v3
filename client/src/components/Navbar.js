@@ -12,13 +12,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const NavContainer = styled.nav`
     width: 100%;
     display: flex;
+    position: relative;
     flex-wrap: nowrap;
-    padding: 20px;
     justify-content: space-between;
     align-items: center;
     color: black;
 `
 const LogoStyle = styled.div`
+    padding: 20px;
     width: 100%;
 `
 const StyledUl = styled.ul`
@@ -55,26 +56,24 @@ const Navbar = ({about, projects, contact}) => {
           <LogoStyle>
               <Logo />
           </LogoStyle>
-          <Burger onClick={() => setIsNavExpanded(!isNavExpanded)}>
-            <GiHamburgerMenu size={60} />
-          </Burger>
+          <div className="nav-burger">
+            <GiHamburgerMenu size={60} onClick={() => setIsNavExpanded(!isNavExpanded)} />
+          </div>
           <div className={
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
           }>
-            <StyledUl>
-              <StyledLi onClick={() => scrollToSection(about)} className="link">
+              <div className="nav-item" onClick={() => scrollToSection(about)}>
                     About
-              </StyledLi>
-              <StyledLi onClick={() => scrollToSection(projects)} className="link">
+              </div>
+              <div className="nav-item" onClick={() => scrollToSection(projects)}>
                     Projects
-              </StyledLi>
-              <StyledLi onClick={() => scrollToSection(contact)} className="link">
+              </div>
+              <div className="nav-item" onClick={() => scrollToSection(contact)}>
                     Contact
-              </StyledLi>
-              <StyledLi>
+              </div>
+              <div className="nav-item" onClick={() => scrollToSection(contact)}>
                 <a className="red-yellow" href="https://drive.google.com/file/d/1yZlxvCHPFpL8kHqTitBZPjhPRjRwWCjp/view?usp=sharing">Resume</a>
-              </StyledLi>
-            </StyledUl>
+              </div>
           </div>
         </NavContainer>
     )
