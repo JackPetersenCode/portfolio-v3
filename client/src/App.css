@@ -87,11 +87,20 @@
 .navigation-menu {
   
   display: flex;
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
   animation: fadeIn 5s;
   -webkit-animation: fadeIn 5s;
   -moz-animation: fadeIn 5s;
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu {
+    display: none;
+  } 
 }
 
 .navigation-menu ul {
@@ -121,14 +130,14 @@
   text-shadow: 0 0 21px rgb(160, 226, 232), 0 0 100px rgb(160, 226, 232);
   color: rgb(160, 226, 232);
   font-size: 40.5px;
-  line-height: 35px;
+  line-height: 100%;
   margin-bottom: 20px;
 }
 
 .redDivOffStyle {
   color: rgb(160, 226, 232);
   font-size: 40.5px;
-  line-height: 35px;
+  line-height: 100%;
   margin-bottom: 20px;
 }
 
@@ -156,12 +165,12 @@ color: rgb(180,180,180);
 
 @media screen and (max-width: 768px) {
   .jackDivOffStyle {
-    font-size: 4.0rem;
-    line-height: 65px;
+    font-size: 15vw;
+    line-height: 100%;
   }
   .jackDivOnStyle {
-    font-size: 4.0rem;
-    line-height: 65px;
+    font-size: 15vw;
+    line-height: 100%;
   }
   .redDivOffStyle {
     font-size: 1.5rem;
@@ -430,6 +439,14 @@ color: rgb(180,180,180);
   -moz-animation: slidein 2s;
   -o-animation: slidein 2s;
   -ms-animation: slidein 2s;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align:center;
+  margin:0 auto;
 }
 
 .linkStyle {

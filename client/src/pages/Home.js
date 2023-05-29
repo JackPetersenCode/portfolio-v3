@@ -105,9 +105,7 @@ const SwitchDiv = styled.div`
       padding-bottom: 20px;
       margin-right: 5%;
     }
-    @media screen and (max-width: 432px) {
-      margin-left: 0px;
-    }
+
 `
 const SwitchImg = styled.img`
     max-height: 100px;
@@ -124,7 +122,6 @@ const BigFlex = styled.div`
 `
 const ServiceDiv = styled.div`
     width: 100%;
-    margin-right: 20px;
 `
 const serviceOnStyle = () => ({
     color: "white",
