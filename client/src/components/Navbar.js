@@ -72,7 +72,7 @@ const Navbar = ({about, projects, contact}) => {
                     Contact
               </div>
               <div className="nav-item" onClick={() => scrollToSection(contact)}>
-                <a className="red-yellow" href="https://drive.google.com/file/d/1Pgf6ysXMLEdjpb2fAEdQ3o0Sjo7jibTU/view?usp=sharing">Resume</a>
+                <a className="red-yellow" href="https://drive.google.com/file/d/18EwCQcBzb4sO3wPbj7PnCKCZYPs18nFe/view?usp=drive_link">Resume</a>
               </div>
           </div>
         </NavContainer>
