@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import {FaHtml5, FaNodeJs, FaReact, FaAws} from "react-icons/fa";
-import {SiCss3, SiJavascript, SiPostgresql} from "react-icons/si"
+import {SiCss3, SiJavascript, SiPostgresql, SiDotnet, SiTypescript, SiPython} from "react-icons/si"
 
 const LinkContainer = styled.div`
     display: flex;
@@ -66,42 +66,53 @@ const Projects = () => {
             <div className="video-container">
                 <VideoDiv>
                   <StyledVideo autoPlay loop muted id='video'>
-                      <source src='thehoopscoop3.mp4' type='video/mp4' />
+                      <source src='newscoop.mp4' type='video/mp4' />
                   </StyledVideo>
                 </VideoDiv>
                 <TextDiv>
                   <StyledH3>The Hoop Scoop</StyledH3>
-                  I created my own NBA database/API, secured routes with passport.js, and documented my API with swagger: https://www.thehoopscoop.org/api-docs. It features a fantasy basketball mini-game, interactive stat tables, shot-chart visualizations with d3.js, and a predictions and odds page featuring a prediction algorithm with a 62.52% success rate, upcoming games and predictions with moneyline odds, and historical games with expected scores, actual scores and moneyline odds.<br></br>
-                  <br></br>
+                  My flagship portfolio project, www.hoopscoop.org, is a full-stack project originally written with React.js/JavaScript/Node.js/Express.js/Postgres, and I have recently re-vamped it with React.js/TypeScript/.NET/C#/Postgres. I read the NBA's API into CSV/JSON files, then into my own Postgres database and have created a massive custom NBA API of my own. This application features a Prop Bet Optimizer that displays the historical success rate of any prop for any player against any opponent. Users can also filter results further with the home/visitor option. (Check it out! www.hoopscoop.org). Users can also view shot charts for every player in any season or game. The 'Legacy Predictions' tool is my game prediction algorithm that has a 63.66% success rate over the last eight seasons. It displays upcoming games with expected scores and all historical results. Finally, the table at the bottom of the page utilizes advanced raw SQL queries to display advanced player stats. Users can filter/sort stats in countless ways, including player or lineups, opponent, home or away, per mode, and stat category (just like the actual NBA API).                  <br></br>
                   Advanced Stats:<br></br>
-                  - View all players' traditional, miscellaneous, and hustle stats for the last 8 seasons. 'All players' stat tables are sortable, click on column header to sort ascending or descending. Search historical players in the search bar and view career stat lines.
+                  - View filterable and sortable stats for players/lineups. Choose between five different categories of statistics, choose per mode, filter stats by season, team, player and opponent, and click on any column header to sort stats.
                   <br></br>
                   <br></br>
-  
-                  Fantasy Mini Game:<br></br>
+                  - Prop Bet Optimizer tool provides user probability of a player prop hitting based on historical results. Users can view season/career historical results and optimize results further with home/away and opponent filters.
+                  <br></br>
+                  <br></br>
+
+                  Fantasy Mini Game: (Legacy Node.js/Express.js version, www.thehoopscoop.org)<br></br>
                   - Assigned every player from chosen season (current season is default) a dollar value, $1, $2, $3, $4, $5, $6 or $7, seven being the most valuable players. Used the total of the season averages of pts, reb, and ast to determine dollar amount, and created 7 dropdown menus containing all players in the NBA organized by dollar amount assigned.<br></br> 
                   - User, with stat tables at bottom of screen for reference, selects 10 players for his or her team, while not going over the $35 salary cap limit. User roster is displayed dynamically as a drag and drop component, top 5 rows are starters, bottom 5 rows are bench players.<br></br>
-                  - Once the user has finished drafting a 10-man roster and the 'Lock in Roster' button is clicked, the computer takes its turn. An array of 10 random integers, each within the range of 1 to 7, and adding up to exactly 35 is created. The integers in the array represent random dollar amounts for players. For each integer in the array, a random player is selected from the corresponding player drop down menu; if the integer is 2, then a random player will be chosen from the $2 player dropdown set, etc. Top 5-dollar value players are set as starters.<br></br>
+                  - Once the user has finished drafting a ten-man roster and the 'Lock in Roster' button is clicked, the computer takes its turn. An array of 10 random integers, each within the range of 1 to 7, and adding up to exactly 35 is created. The integers in the array represent random dollar amounts for players. For each integer in the array, a random player is selected from the corresponding player drop down menu; if the integer is 2, then a random player will be chosen from the $2 player dropdown set, etc. Top 5-dollar value players are set as starters.<br></br>
                   - Once the "Lock in Roster" button is hit, the computer drafts its players, and the game is simulated using a multitude of stats (mostly efficiency or per-minute based). The stats are split into four video-game-like categories and displayed to the user to inform them of the strengths and weaknesses of his or her roster.<br></br>  
                   - Make sure to add your score to the high score list!<br></br><br></br>
   
                   Shot Charts: <br></br>
-                  - User selects any player on any team in the given 8 seasons from the drop-down menus, and season/game shot charts are displayed. Once the player is selected, the ‘games’ drop-down menu is activated, and the user has the option to view a shot chart from any specific game the player played in. Made shots are green, missed shots are blue. <br></br>
+                  - User selects any player on any team in the given eight seasons from the drop-down menus, and season/game shot charts are displayed. Once the player is selected, the ‘games’ drop-down menu is activated, and the user has the option to view a shot chart from any specific game the player played in. Made shots are green, missed shots are blue. <br></br>
                   <br></br>
                   
                   Predictions:<br></br>
-                  - Displays historical expected/actual results and upcoming predictions and odds for every game in the last 7 seasons. Algorithm success rate is 62.52%.
+                  - Displays historical expected/actual results and upcoming predictions and odds for every game in the last eight seasons. Algorithm success rate is 63.09%.
                 </TextDiv>
             </div>
             <LinkContainer>
               <div className="project-links">
-                  <a href="https://www.thehoopscoop.org">Live</a>
+                  <a href="https://www.hoopscoop.org">Live .NET Version</a>
               </div>
               <div className="project-links">
-                  <a href="https://www.github.com/JackPetersenCode/NBA">Code</a>
+                  <a href="https://www.github.com/JackPetersenCode/thehoopscoop">Code</a>
               </div>
             </LinkContainer>
             <LinkContainer>
+              <IconDiv>
+                <SiDotnet size={60}/>
+              </IconDiv>
+              <IconDiv>
+                <SiTypescript size={60}/>
+              </IconDiv>
+              <IconDiv>
+                <SiPython size={60}/>
+              </IconDiv>
               <IconDiv>
                 <FaReact size={60}/>
               </IconDiv>

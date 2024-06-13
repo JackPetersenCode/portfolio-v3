@@ -90,10 +90,10 @@ const About = () => {
               <Line></Line> 
               <div className="parent-div-about">
                 <div className="text-div">                  
-                    I'm Jack, a self-taught software developer with a professional track record of creativity and success in multiple industries. As a career bartender, I did everything from managing a high-volume sports bar to managing the bar program at the Five Easy Pieces camp at the Bohemian Grove; one of the most exclusive, elite clubs in the world. As a self-taught musician, I was signed by Tammy Miranda Music Productions in Austin, Tx, where I booked weekly residencies at the historical Maggie Mae's and Recess Arcade Bar on Austin's famous Sixth Street. I established consistent work with various venues across Texas with a solo “loop pedal” act averaging 4-5 performances a week and frequently substituted as a bassist or guitarist for the production company.
+                    Jack Petersen here, a self-taught software developer with a professional track record of creativity and success in multiple industries. As a career bartender, I did everything from managing a high-volume sports bar to managing the bar program at the Five Easy Pieces camp at the Bohemian Grove; one of the most exclusive, elite clubs in the world. As a self-taught musician, I was signed by Tammy Miranda Music Productions in Austin, Tx, where I booked weekly residencies at the historical Maggie Mae's and Recess Arcade Bar on Austin's famous Sixth Street. I established consistent work with various venues across Texas with a solo “loop pedal” act averaging 4-5 performances a week and frequently substituted as a bassist or guitarist for the production company.
                     <br></br>
                     <br></br> 
-                    As a sports fan, I couldn't wait to apply my new-found technical knowledge to the world of basketball analytics. My first portfolio project, <a href="https://www.thehoopscoop.org">The Hoop Scoop</a>, includes a fantasy basketball mini game, advanced statistics, shot chart visualizations, and a prediction algorithm with a 62.52% success rate across 7 seasons of data. My dog and I are also big frisbee-golfers. She's an 8-year-old Australian Cattle Dog with a big personality named 'Mama'. 
+                    As a sports fan, I couldn't wait to apply my new-found technical knowledge to the world of basketball analytics. My first portfolio project, <a href="https://www.hoopscoop.org">The Hoop Scoop</a>, includes a prop bet optimizer tool, a fantasy basketball mini game, advanced sortable/filterable statistics, shot chart visualizations, and a predictions algorithm with a 63.66% success rate across eight seasons of data. My dog and I are also big frisbee-golfers. She's an eight-year-old Australian Cattle Dog with a big personality named 'Mama'. 
                     <br></br>
                     <br></br>
                     Shoot me an email or call anytime! I would love to chat about the value I can bring to your company/organization.  
@@ -110,8 +110,9 @@ const About = () => {
                       </SkillsDivTitle>
                       <TechSkillsParent>
                           <StyledSpan>JavaScript</StyledSpan>
+                          <StyledSpan>TypeScript</StyledSpan>                          
                           <StyledSpan>Python</StyledSpan>
-                          <StyledSpan>Java</StyledSpan>
+                          <StyledSpan>C#</StyledSpan>
                       </TechSkillsParent>
                     </InnerContainer>
 
@@ -135,15 +136,17 @@ const About = () => {
                           Back-end:
                       </SkillsDivTitle>
                       <TechSkillsParent>
+                        <StyledSpan>.NET</StyledSpan>
+                        <StyledSpan>Flask</StyledSpan>
                         <StyledSpan>Express.js</StyledSpan>
                         <StyledSpan>Node.js</StyledSpan>
-                        <StyledSpan>PostgreSQL</StyledSpan>
                         <StyledSpan>SQL</StyledSpan>
                         <StyledSpan>Swagger</StyledSpan>
                         <StyledSpan>API Design</StyledSpan>
                         <StyledSpan>Mocha/Chai</StyledSpan>
                         <StyledSpan>Django</StyledSpan>
                         <StyledSpan>Redis</StyledSpan>
+                        <StyledSpan>Postman</StyledSpan>
                       </TechSkillsParent>
                     </InnerContainer>
 
